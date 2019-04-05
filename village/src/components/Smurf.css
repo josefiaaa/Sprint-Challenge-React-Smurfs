@@ -51,6 +51,7 @@ h1 {
 .smurfs {
     background-image: url(Village.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .smurf-wrap {
@@ -93,6 +94,7 @@ input{
     outline: none;
     border: none;
     border-bottom: 2px solid blue;
+    font-size: 1.3rem;
 }
 
 .buttons {

@@ -17,6 +17,7 @@ let smurfs = [
   {
     id: 0,
     name: 'Brainey Smurf',
+    img: "Smurfette.jpg",
     age: 200,
     height: '8cm'
   }

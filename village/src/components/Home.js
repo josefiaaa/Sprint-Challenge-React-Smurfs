@@ -7,7 +7,7 @@ import './Smurf.css';
 
 function Home () {
     return(
-        <div>
+        <div className='home'>
             <h1>Smurf Database</h1>
             <div className='danger-button'>
              <Link className='enter' to='/smurfs'>Enter Smurf Village</Link>
