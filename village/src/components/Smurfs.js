@@ -2,24 +2,29 @@ import React, { Component } from 'react';
 
 import Smurf from './Smurf';
 
+// import Village from '../assets/Village.jpg'
+
 class Smurfs extends Component {
   render() {
     return (
-      <div className="Smurfs">
+      <div className="smurfs">
         <h1>Smurf Village</h1>
-        <ul>
+        {/* <img className='village' src={Village} /> */}
+        <div className='smurf-wrap'>
           {this.props.smurfs.map(smurf => {
             return (
-              <Smurf
+              <div className='smurf'>
+                <Smurf
                 name={smurf.name}
                 id={smurf.id}
                 age={smurf.age}
                 height={smurf.height}
                 key={smurf.id}
               />
+              </div>
             );
           })}
-        </ul>
+        </div>
       </div>
     );
   }
