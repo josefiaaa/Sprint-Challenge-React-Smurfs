@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Smurf from './Smurf';
 
-// import Village from '../assets/Village.jpg'
 
-class Smurfs extends Component {
-  render() {
+
+const Smurfs = props => {
+  
     return (
       <div className="smurfs">
         <h1>Smurf Village</h1>
-        {/* <img className='village' src={Village} /> */}
         <div className='smurf-wrap'>
-          {this.props.smurfs.map(smurf => {
+          {props.smurfs.map(smurf => {
             return (
               <div className='smurf'>
                 <Smurf
+                deleteSmurf={props.deleteSmurf}
                 name={smurf.name}
                 id={smurf.id}
                 age={smurf.age}
@@ -27,8 +27,8 @@ class Smurfs extends Component {
         </div>
       </div>
     );
-  }
-}
+  
+}  
 
 Smurf.defaultProps = {
  smurfs: [],
